@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS `student_info01`;
+USE `student_info01`;
+
+CREATE TABLE `Students` (
+    `ID` INT PRIMARY KEY,
+    `Name` VARCHAR(100),
+    `DOB` DATE,
+    `email` VARCHAR(100),
+    `birth_country` VARCHAR(50)
+);
+
+INSERT INTO `Students` (`ID`,`Name`,`DOB`,`email`,`birth_country`) VALUES
+    (12200338, 'Timur Abdurakhman', '2001-11-06', 'timuleooo0212@gmail.com', 'Uzbekistan'),
+    (12200329, 'Adham', '2000-09-12', 'adham_one@gmail.com', 'Uzbekistan'),
+    (1220023, 'AliAkbar', '2001-01-16', 'vakhitovaliakabar@gmail.com', 'Uzbekistan'),
+    (12100333, 'Jennie', '2001-11-16', 'janne@gmail.com', 'Russia'),
+    (12200013, 'Kai', '1999-05-12', 'kaimulennen@gmail.com', 'Swisstherland');
+
+CREATE TABLE `Courses` (
+    `course_id` INT PRIMARY KEY,
+    `course_name` VARCHAR(70),
+    `course_credit` INT
+);
+
+INSERT INTO `Courses` (`course_id`, `course_name`, `course_credit`) VALUES
+    (11001, 'Introduction to Programming', 3),
+    (11002, 'Database Management Systems', 3),
+    (11003, 'Software Engeenring', 3);
